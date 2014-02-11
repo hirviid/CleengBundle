@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="cleeng.api.class">Cleeng_Api</parameter>
+        <parameter key="cleeng.class">Hirviid\Bundle\CleengBundle\Cleeng</parameter>
+    </parameters>
+
+    <services>
+
+        <service id="cleeng_api" class="%cleeng.api.class%" public="false">
+            <call method="setPublisherToken">
+                <argument>%cleeng.publisher_token%</argument>
+            </call>
+        </service>
+
+        <service id="cleeng" class="%cleeng.class%" >
+            <argument type="service" id="cleeng_api" />
+            <argument>%cleeng.sandbox%</argument>
+        </service>
+
+    </services>
+</container>
