@@ -1,7 +1,9 @@
 {
 	"name":	"hirviid/hirviid-cleeng-bundle",
-	"description": "This bundle provides a simple integration of the Cleeng PHP SDK into Symfony2",
 	"type":	"symfony-bundle",
+	"description": "This bundle provides a simple integration of the Cleeng PHP SDK into Symfony2",
+    "keywords": ["cleeng"],
+    "homepage": "http://github.com/hirviid/CleengBundle",
     "license": "MIT",
     "authors": [
         {
@@ -17,11 +19,5 @@
 	"autoload":     {
         "psr-0": { "Hirviid\\Bundle\\CleengBundle": "" }
     },
-    "target-dir": "Hirviid/Bundle/CleengBundle",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1.x-dev"
-        }
-    },
-    "minimum-stability": "dev"
+    "target-dir": "Hirviid/Bundle/CleengBundle"
 }
