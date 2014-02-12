@@ -17,13 +17,17 @@ class Cleeng
     /**
      * @param \Cleeng_Api $api
      * @param bool $isSandbox
+     * @param string $publisherToken
      */
-    public function __construct(\Cleeng_Api $api, $isSandbox = false)
+    public function __construct(\Cleeng_Api $api, $isSandbox = false, $publisherToken = null)
     {
         $this->api = $api;
 
         if (true === $isSandbox) {
             $this->api->enableSandbox();
+        }
+        if (null !== $publisherToken) {
+            $this->api->setPublisherToken($publisherToken);
         }
     }
 }

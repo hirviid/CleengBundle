@@ -36,7 +36,7 @@ class Configuration implements ConfigurationInterface
                     ->defaultFalse()
                 ->end()
                 ->scalarNode('publisher_token')
-                    ->isRequired()
+                    ->defaultNull()
                 ->end()
             ->end()
         ;

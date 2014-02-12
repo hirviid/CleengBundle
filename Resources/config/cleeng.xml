@@ -12,14 +12,12 @@
     <services>
 
         <service id="cleeng_api" class="%cleeng.api.class%" public="false">
-            <call method="setPublisherToken">
-                <argument>%cleeng.publisher_token%</argument>
-            </call>
         </service>
 
         <service id="cleeng" class="%cleeng.class%" >
             <argument type="service" id="cleeng_api" />
             <argument>%cleeng.sandbox%</argument>
+            <argument>%cleeng.publisher_token%</argument>
         </service>
 
     </services>
