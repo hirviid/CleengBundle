@@ -5,11 +5,13 @@ This bundle provides a simple integration of the "[Cleeng PHP SDK](https://githu
 Cleeng offers an iTunes™ like purchase experience to any website, from video platforms to newspapers and live concerts. You can find more
 information about Cleeng on its dedicated page at
 http://cleeng.com.
-```php
-    <?php
 
-    $cleengApi = $this->container->get('cleeng')->api;
-``
+```php
+<?php
+
+$cleengApi = $this->container->get('cleeng')->api;
+```
+
 The bundle provides a new `cleeng` service that returns an instance of
 `Cleeng_Api`.
 
@@ -26,17 +28,17 @@ Add on composer.json (see http://getcomposer.org/)
 
 ### Step 2) Register the bundle
 ```php
-    <?php
-    // app/AppKernel.php
+<?php
+// app/AppKernel.php
 
-    public function registerBundles()
-    {
-        $bundles = array(
-            // ...
-            new Hirviid\Bundle\CleengBundle\HirviidCleengBundle(),
-            // ...
-        );
-    }
+public function registerBundles()
+{
+    $bundles = array(
+        // ...
+        new Hirviid\Bundle\CleengBundle\HirviidCleengBundle(),
+        // ...
+    );
+}
 ```
 ## Documentation
 

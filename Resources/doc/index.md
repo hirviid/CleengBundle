@@ -15,12 +15,12 @@ hirviid_cleeng:
 ## Usage example
 
 ```php
-    <?php
+<?php
 
-    $cleengApi = $this->container->get('cleeng')->api;
+$cleengApi = $this->container->get('cleeng')->api;
 
-    $customerEmail = 'current@email.com';
-    $newCustomerEmail = 'new@email.com';
+$customerEmail = 'current@email.com';
+$newCustomerEmail = 'new@email.com';
 
-    $cleengApi->updateCustomerEmail($customerEmail, $newCustomerEmail);
+$cleengApi->updateCustomerEmail($customerEmail, $newCustomerEmail);
 ```
