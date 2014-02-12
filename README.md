@@ -17,7 +17,7 @@ The bundle provides a new `cleeng` service that returns an instance of
 
 ## Installation
 
-#### Step 1) Get the bundle using composer (symfony 2.1 pattern)
+### Step 1) Get the bundle using composer (symfony 2.1 pattern)
 
 Add on composer.json (see http://getcomposer.org/)
 
